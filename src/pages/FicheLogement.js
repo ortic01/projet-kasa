@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import products from "../data.json";
 
 import Rating from "../components/Etoile";
@@ -12,9 +12,12 @@ import Collapse from "../components/Accordeon";
 function FicheLogemenProduct() {
   const { productId } = useParams();
   const product = products.find((product) => product.id === productId);
-  const { title, location, rating, host, equipments, description, pictures } =
+  
+if (!product) {
+  return <Navigate to= "/404" />
+}
+const { title, location, rating, host, equipments, description, pictures } =
     product;
-
   return (
     <div className="fichelogemenproduct">
       <Caroussel slides={pictures} />
