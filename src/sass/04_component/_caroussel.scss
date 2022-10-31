@@ -19,6 +19,14 @@
       height: 415px;
     }
   }
+  .length-indicatif{
+    position:absolute;
+    bottom: 8%;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    z-index: 1000;
+}
 
   &__inactive-picture {
     transform: scale(1.05);
