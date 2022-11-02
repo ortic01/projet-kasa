@@ -13,7 +13,7 @@ function Products() {
   return (
     <div className="home">
       <div className="home__banner">
-        <Herobanner image={image} title={slogan} />
+      <Herobanner image={image} title={slogan} />
       </div>{" "}
       <section className="home__products">
         {products.map((product) => {

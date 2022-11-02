@@ -12,7 +12,7 @@ function Apropos() {
       return aproposData.respect;
     case "service":
       return aproposData.service;
-    case "sécurity":
+    case "Responsibility":
       return aproposData.security;
     default:
       console.log("default");
@@ -27,7 +27,7 @@ return (
       <Collapse title="Fiabilité" content={content("fiability")} />
       <Collapse title="Respect" content={content("respect")} />
       <Collapse title="Service" content={content("service")} />
-      <Collapse title="Responsabilité" content={content("sécurity")} />
+      <Collapse title="Responsabilité" content={content("Responsibility")} />
     </div>
   </div>
 );

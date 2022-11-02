@@ -40,7 +40,8 @@ function Caroussel({ slides }) {
       {length > 1 ? (
         <>
           <div className="caroussel__previous" onClick={prevSlide}>
-          <p className="length-indicatif">{current+1}/{length}</p><img src={arrowLeft} alt="" className="caroussel__previous-icon" />
+          <p className="length-indicatif">{current+1}/{length}</p>
+          <img src={arrowLeft} alt="" className="caroussel__previous-icon" />
           </div>
           <div className="caroussel__next" onClick={nextSlide}>
             <img src={arrowRight} alt="" className="caroussel__next-icon" />
