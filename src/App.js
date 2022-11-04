@@ -1,4 +1,4 @@
-//react Framework
+
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -10,13 +10,13 @@ import {
 
 import "./main.css";
 
-//pages par React BrowserRouter
+
 import Home from "./pages/Home"
 import Apropos from "./pages/Apropos";
 import FicheLogement from "./pages/FicheLogement";
 import PageError from "./pages/PageError";
 
-//components Header et Footer
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
